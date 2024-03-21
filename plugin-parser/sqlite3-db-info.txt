@@ -1,0 +1,52 @@
+sqlite> select * from tblModel;
+┌─────────────────────────────┬─────────┬────────┬───────────────────┬────────────────────────────────────┬────────────────────────────────────────┐
+│             key             │ version │ active │       path        │            description             │                app_info                │
+├─────────────────────────────┼─────────┼────────┼───────────────────┼────────────────────────────────────┼────────────────────────────────────────┤
+│ _model_org.tizen.tflite.add │ 1       │ F      │ add-global.tflite │ add 2.0 to the input float tensors │ {                                      │
+│                             │         │        │                   │                                    │   "is_rpk" : "T",                      │
+│                             │         │        │                   │                                    │   "pkgid" : "org.tizen.tflite.add",    │
+│                             │         │        │                   │                                    │   "appid" : null,                      │
+│                             │         │        │                   │                                    │   "res_type" : "org.tizen.tflite.add", │
+│                             │         │        │                   │                                    │   "res_version" : "1.5.0"              │
+│                             │         │        │                   │                                    │ }                                      │
+├─────────────────────────────┼─────────┼────────┼───────────────────┼────────────────────────────────────┼────────────────────────────────────────┤
+│ _model_org.tizen.tflite.add │ 2       │ F      │ add-global.tflite │ add 2.0 to the input float tensors │ {                                      │
+│                             │         │        │                   │                                    │   "is_rpk" : "T",                      │
+│                             │         │        │                   │                                    │   "pkgid" : "org.tizen.tflite.add",    │
+│                             │         │        │                   │                                    │   "appid" : null,                      │
+│                             │         │        │                   │                                    │   "res_type" : "org.tizen.tflite.add", │
+│                             │         │        │                   │                                    │   "res_version" : "1.5.0"              │
+│                             │         │        │                   │                                    │ }                                      │
+├─────────────────────────────┼─────────┼────────┼───────────────────┼────────────────────────────────────┼────────────────────────────────────────┤
+│ _model_org.tizen.tflite.add │ 3       │ F      │ add-global.tflite │ add 2.0 to the input float tensors │ {                                      │
+│                             │         │        │                   │                                    │   "is_rpk" : "T",                      │
+│                             │         │        │                   │                                    │   "pkg_id" : "org.tizen.tflite.add",   │
+│                             │         │        │                   │                                    │   "app_id" : "",                       │
+│                             │         │        │                   │                                    │   "res_type" : "org.tizen.tflite.add", │
+│                             │         │        │                   │                                    │   "res_version" : "1.5.0"              │
+│                             │         │        │                   │                                    │ }                                      │
+├─────────────────────────────┼─────────┼────────┼───────────────────┼────────────────────────────────────┼────────────────────────────────────────┤
+│ _model_org.tizen.tflite.add │ 4       │ F      │ add-global.tflite │ add 2.0 to the input float tensors │ {                                      │
+│                             │         │        │                   │                                    │   "is_rpk" : "T",                      │
+│                             │         │        │                   │                                    │   "pkg_id" : "org.tizen.tflite.add",   │
+│                             │         │        │                   │                                    │   "app_id" : "",                       │
+│                             │         │        │                   │                                    │   "res_type" : "org.tizen.tflite.add", │
+│                             │         │        │                   │                                    │   "res_version" : "1.5.0"              │
+│                             │         │        │                   │                                    │ }                                      │
+├─────────────────────────────┼─────────┼────────┼───────────────────┼────────────────────────────────────┼────────────────────────────────────────┤
+│ _model_org.tizen.tflite.add │ 5       │ F      │ add-global.tflite │ add 2.0 to the input float tensors │ {                                      │
+│                             │         │        │                   │                                    │   "is_rpk" : "T",                      │
+│                             │         │        │                   │                                    │   "pkg_id" : "org.tizen.tflite.add",   │
+│                             │         │        │                   │                                    │   "app_id" : "",                       │
+│                             │         │        │                   │                                    │   "res_type" : "org.tizen.tflite.add", │
+│                             │         │        │                   │                                    │   "res_version" : "1.5.0"              │
+│                             │         │        │                   │                                    │ }                                      │
+├─────────────────────────────┼─────────┼────────┼───────────────────┼────────────────────────────────────┼────────────────────────────────────────┤
+│ _model_org.tizen.tflite.add │ 6       │ T      │ add-global.tflite │ add 2.0 to the input float tensors │ {                                      │
+│                             │         │        │                   │                                    │   "is_rpk" : "T",                      │
+│                             │         │        │                   │                                    │   "pkg_id" : "org.tizen.tflite.add",   │
+│                             │         │        │                   │                                    │   "app_id" : "",                       │
+│                             │         │        │                   │                                    │   "res_type" : "org.tizen.tflite.add", │
+│                             │         │        │                   │                                    │   "res_version" : "1.5.0"              │
+│                             │         │        │                   │                                    │ }                                      │
+└─────────────────────────────┴─────────┴────────┴───────────────────┴────────────────────────────────────┴────────────────────────────────────────┘

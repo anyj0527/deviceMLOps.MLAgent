@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="6.5" package="org.tizen.hellorpk" version="1.0.0" res-type="hello.rpk" res-version="1.5.0">
+    <allowed-package id="*package-manager*">
+		<required-privileges>
+			<privilege>http://tizen.org/privilege/packagemanager.info</privilege>
+		</required-privileges>
+    </allowed-package>
+	<allowed-package id="org.tizen.*"/>
+	<allowed-package id="*application*"/>
+</manifest>

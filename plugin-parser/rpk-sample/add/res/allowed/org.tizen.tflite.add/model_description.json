@@ -1,0 +1,9 @@
+[
+  {
+    "name" : "add-tflite",
+    "shared" : "true",
+    "model" : "add-allowed.tflite",
+    "version" : "1.0.0",
+    "description" : "add 2.0 to the input float tensors"
+  }
+]

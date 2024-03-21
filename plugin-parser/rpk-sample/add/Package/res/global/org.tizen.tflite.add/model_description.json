@@ -1,0 +1,11 @@
+[
+  {
+    "name" : "org.tizen.tflite.add",
+    "model" : "add-global.tflite",
+    "description" : "add 2.0 to the input float tensors",
+    "activate" : "true",
+    "clear" : "false",
+    "shared" : "true",
+    "version" : "1.0.1"
+  }
+]
