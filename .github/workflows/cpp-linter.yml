@@ -7,15 +7,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: install clang-17 from apt.llvm.org
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add - &&\
+          sudo add-apt-repository "deb http://apt.llvm.org/$(lsb_release -cs)/ llvm-toolchain-$(lsb_release -cs)-17 main" && \
+          sudo apt-get install -y clang-17
+      - name: install the meson and ninja build systems
+        run: python3 -m pip install meson ninja
+      - name: install build requirements
+        run: |
+          sudo apt-get install -y libunwind-dev libgstreamer1.0-dev libsystemd-dev \
+            libjson-glib-dev
       - uses: cpp-linter/cpp-linter-action@v2
         id: linter
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          style: file
+          style: 'file'
+          # tidy-checks: '-*'
           extensions: 'cc'
-          version: 16
-          lines-changed-only: true
+          version: 17
+          # lines-changed-only: true
+          # files-changed-only: false
 
 
       - name: failing fast

@@ -31,4 +31,16 @@ jobs:
         CC: clang-17
         CXX: clang++-17
     - run: meson compile -C $BUILD_DIR
+    - uses: cpp-linter/cpp-linter-action@v2
+      id: linter
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        style: file
+        # tidy-checks: '-*'
+        extensions: 'cc'
+        version: 17
+        # lines-changed-only: true
+        # files-changed-only: false
+        database: 'build'
     # TODO: Add compile time unit testing
